@@ -43,8 +43,224 @@
     footer{padding:28px 0;color:#928b7d;font-size:.85rem;border-top:1px solid #211c12}
     .small{font-size:.82rem;color:#9e9688}
     @media(max-width:760px){.hero{grid-template-columns:1fr;padding:48px 0}.logo-frame{max-width:520px;order:-1}.grid{grid-template-columns:1fr}.links{gap:12px;font-size:.8rem}nav{align-items:flex-start;flex-direction:column}section{padding:58px 0}}
-  </style>
+  
+/* DJ XWHITE — Biography & Gallery */
+.xwhite-section {
+  padding: 60px 20px;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+.xwhite-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.xwhite-heading {
+  color: var(--gold, #d9ad45);
+  text-align: center;
+  font-size: clamp(1.8rem, 5vw, 2.7rem);
+  margin: 0 0 12px;
+}
+
+.xwhite-intro {
+  text-align: center;
+  color: #bdbdbd;
+  max-width: 650px;
+  margin: 0 auto 35px;
+  line-height: 1.8;
+}
+
+.xwhite-bio {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+.xwhite-portrait {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid #302719;
+}
+
+.xwhite-copy h3 {
+  color: var(--gold, #d9ad45);
+  font-size: 1.7rem;
+  margin: 0 0 15px;
+}
+
+.xwhite-copy p {
+  color: #c9c9c9;
+  line-height: 1.9;
+  margin: 0 0 15px;
+}
+
+.xwhite-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.xwhite-genre {
+  border: 1px solid var(--gold, #d9ad45);
+  color: var(--gold, #d9ad45);
+  padding: 8px 12px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+}
+
+.xwhite-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.xwhite-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #302719;
+  transition: transform 0.3s ease,
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.xwhite-gallery img:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold, #d9ad45);
+  box-shadow: 0 12px 32px #000,
+              0 0 22px #d9ad4525;
+}
+
+.xwhite-tagline {
+  text-align: center;
+  color: var(--gold, #d9ad45);
+  margin-top: 35px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 700px) {
+  .xwhite-section {
+    padding: 42px 16px;
+  }
+
+  .xwhite-bio {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .xwhite-portrait {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .xwhite-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .xwhite-gallery img:last-child {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 6px);
+  }
+}
+</style>
 </head>
+
+<section class="xwhite-section" id="about">
+  <div class="xwhite-container">
+
+    <h2 class="xwhite-heading">MEET DJ XWHITE</h2>
+
+    <p class="xwhite-intro">
+      Great music. Powerful energy. Unforgettable nights.
+      Welcome to my world of sound.
+    </p>
+
+    <div class="xwhite-bio">
+
+      <img
+        class="xwhite-portrait"
+        src="dj-xwhite-portrait.jpg"
+        alt="DJ XWHITE portrait"
+        loading="lazy"
+      />
+
+      <div class="xwhite-copy">
+        <h3>The DJ Behind the Vibe</h3>
+
+        <p>
+          I'm DJ XWHITE, a club and party DJ passionate
+          about bringing people together through music.
+          My goal is to create unforgettable moments,
+          keep the energy alive, and give every crowd
+          a sound worth remembering.
+        </p>
+
+        <p>
+          From the infectious rhythms of Afrobeats to
+          the deep grooves of Amapiano and the energy
+          of Hip-hop, I bring different sounds together
+          to create the right atmosphere for every party.
+        </p>
+
+        <p>
+          Explore my mixes, feel the rhythm, and join
+          me on the journey.
+        </p>
+
+        <div class="xwhite-genres">
+          <span class="xwhite-genre">Afrobeats</span>
+          <span class="xwhite-genre">Amapiano</span>
+          <span class="xwhite-genre">Hip-hop</span>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 class="xwhite-heading">BEHIND THE DECKS</h2>
+
+    <p class="xwhite-intro">
+      A glimpse into the world of DJ XWHITE.
+    </p>
+
+    <div class="xwhite-gallery">
+
+      <img
+        src="dj-xwhite-photo-1.jpg"
+        alt="DJ XWHITE at a DJ performance"
+        loading="lazy"
+      />
+
+      <img
+        src="dj-xwhite-photo-2.jpg"
+        alt="DJ XWHITE mixing music"
+        loading="lazy"
+      />
+
+      <img
+        src="dj-xwhite-photo-3.jpg"
+        alt="DJ XWHITE behind the decks"
+        loading="lazy"
+      />
+
+    </div>
+
+    <p class="xwhite-tagline">
+      DJ XWHITE — FEEL THE MUSIC. OWN THE NIGHT.
+    </p>
+
+  </div>
+</section>
 <body>
 <header>
   <nav class="wrap">
