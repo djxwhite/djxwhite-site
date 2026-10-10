@@ -31,8 +31,9 @@
     h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.1;margin:10px 0 20px}
     .muted{color:var(--muted);max-width:700px}
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
-    .card{background:linear-gradient(145deg,#151515,#0d0d0d);border:1px solid #302719;padding:25px;min-height:170px}
+    .card{background:linear-gradient(145deg,#1c1a14,#090909 75%);border:1px solid #8f6b25;border-radius:14px;padding:25px;min-height:170px;box-shadow:0 8px 28px #000,0 0 14px #d9ad4512;transition:transform .25s,border-color .25s,box-shadow .25s}
     .card .icon{font-size:1.6rem;color:var(--gold)}.card h3{margin:10px 0 5px}.card p{margin:0;color:var(--muted);font-size:.95rem}
+.card:hover{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 12px 32px #000,0 0 22px #d9ad4525}
     .genre-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
     .pill{border:1px solid #6d5528;color:#f2d88f;padding:8px 13px;border-radius:99px;font-size:.9rem}
     .booking{background:linear-gradient(120deg,#211807,#0c0c0c 65%);border:1px solid #5d4820;padding:clamp(24px,5vw,48px);margin-top:24px}
